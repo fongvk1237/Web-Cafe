@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+    background-image: url('https://preview.redd.it/ypjshztlu5d31.jpg?width=604&format=pjpg&auto=webp&s=03f7f2aa630c305bbd5d0357de8e871ffbcd1894');
+}
+.menu{
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 4rem;
+    color: azure;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li {
+    padding: 0 17px;
+}
+.menu ul li a{
+    font-weight: bold;
+    color: azure;
+    font-size: 14px;
+}
+
+/* content */
+
+.content{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.content .header,.grid-card{
+    width: 50%;
+    position: relative;
+}
+.content .header{
+    color: azure;
+    padding: 20px;
+}
+.content .header h3{
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+.content .header h3 i{
+    color: orange;
+}
+.content .header h1{
+    font-size: 5rem;    
+}
+.content .header p{
+    opacity: .6;
+}
+.grid-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+.grid-card .box{
+    width: 100%;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    transition: .4s;
+    position: relative;
+}
+.bg1{
+    background-image: url('https://asian-traveller.com/jp/wp-content/uploads/2020/03/uboncafe-anna-11-1024x768.jpg');
+
+}
+.bg2{
+    background-image: url('https://lh3.googleusercontent.com/p/AF1QipN3GQrorKSi0sVa496XT5CiqggLPegJkhvKM-3R=s1360-w1360-h1020');
+}
+.bg3{
+    background-image: url('https://pbs.twimg.com/media/EdBbnmuU4AAEKtN.jpg');
+}
+.bg4{
+    background-image: url('https://lh3.googleusercontent.com/p/AF1QipP3eIDMp7mgnKjdIsxSpRZ7TcK3df6q02mlIwYS=s1360-w1360-h1020');
+}
+.content .box h2{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: azure;
+}
+.content .box:hover{
+    transform: translate(-15px);
+}
